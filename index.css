@@ -1,0 +1,160 @@
+:root {
+    --border-radius:7.5%; 
+    --border-curved:4%; 
+    --border-icon:20%; 
+    --logo-color:#0077B6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--logo-color);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width: 100%;
+}
+
+.left-column {
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.right-column {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn {
+    background: #ff416c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 200px;
+    height:40px;
+}
+
+.btn:hover {
+    background: #ff4b2b;
+}
+
+.logo{
+    width: 40%;
+}
+
+.boat{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.logo_sentence{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.slogan{
+    max-width: 300px;
+}
+
+.forget_password{
+    color: #0077B6;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.forget_password:hover{
+    text-decoration: underline;
+}
+
+.material-symbols-outlined {
+  color: white;
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Style the email and password input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 2.5%;
+    margin:  0;
+    border: none;
+    background: #f0f0f0;
+    font-size: 16px;
+    outline: none; 
+    
+}
+
+.sign-in-mail, .sign-in-password,.sign-up-mail, .sign-up-password, .sign-up-username {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.material-symbols-outlined.account_circle, .material-symbols-outlined.lock    {
+    font-size: 24px; 
+    color: gray;
+    margin-right: 10px; 
+    border: solid gray;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-bottom-left-radius: var(--border-icon);
+    border-top-left-radius: var(--border-icon);
+}
+
+#message{
+    color: var(--logo-color);
+}
